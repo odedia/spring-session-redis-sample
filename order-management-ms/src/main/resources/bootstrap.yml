@@ -1,0 +1,16 @@
+spring:
+  application:
+     name: order-management-ms
+  cloud:
+    config:
+      failFast: true
+      discovery:
+        enabled: true
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8081
