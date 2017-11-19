@@ -6,6 +6,8 @@ import java.util.List;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,6 +15,8 @@ import com.odedia.springsession.dto.Order;
 
 @SpringBootApplication
 @EnableDiscoveryClient
+@EnableWebSecurity
+@EnableRedisHttpSession
 @RestController
 public class RestApplication {
 

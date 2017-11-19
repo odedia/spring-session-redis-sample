@@ -8,21 +8,28 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class LoginManagementRest {
-	
+
 	@GetMapping(value = "/login")
 	public String login(HttpServletRequest request, HttpSession session) {
-	    /*
-	     * create new session if session is not new
-	     */
-	    if (!session.isNew()) {
-	        session.invalidate();
-	    }
-	    return "login";
+		/*
+		 * create new session if session is not new
+		 */
+		if (!session.isNew()) {
+			session.invalidate();
+		}
+		return "login";
 	}
-	
-	
+
+
 	@GetMapping("/logout")
 	public String logout() {
-	    return "redirect:/login";
+		return "redirect:/login";
 	}
+
+	@GetMapping("/test")
+	public String test() {
+		return "test successful";
+	}
+
+
 }
