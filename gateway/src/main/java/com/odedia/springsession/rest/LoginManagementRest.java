@@ -25,11 +25,4 @@ public class LoginManagementRest {
 	public String logout() {
 		return "redirect:/login";
 	}
-
-	@GetMapping("/test")
-	public String test() {
-		return "test successful";
-	}
-
-
 }
