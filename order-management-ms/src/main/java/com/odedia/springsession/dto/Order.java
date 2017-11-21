@@ -1,4 +1,5 @@
 package com.odedia.springsession.dto;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
