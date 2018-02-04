@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LoginManagementResource {
 
-	@GetMapping(value = "/login")
+	@GetMapping(value = "/user")
 	public String login(HttpServletRequest request, HttpSession session) {
 		/*
 		 * create new session if session is not new
@@ -17,7 +17,7 @@ public class LoginManagementResource {
 		if (!session.isNew()) {
 			session.invalidate();
 		}
-		return "login";
+		return "login\n";
 	}
 
 
