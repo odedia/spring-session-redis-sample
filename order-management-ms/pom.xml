@@ -59,7 +59,7 @@
 		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok-maven -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
-			<version>1.16.6</version>
+			<!-- <version>1.16.6</version> -->
 			<artifactId>lombok</artifactId>
 			<scope>provided</scope>
 		</dependency>

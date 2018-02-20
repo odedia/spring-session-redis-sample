@@ -17,7 +17,7 @@ public class LoginManagementResource {
 		if (!session.isNew()) {
 			session.invalidate();
 		}
-		return "login\n";
+		return "Successful login!\n";
 	}
 
 
